@@ -1,0 +1,31 @@
+# Site settings
+title: Ioannis Arailopoulos
+email: jackarailo@gmail.com
+description: >
+  Personal blog
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://jackarailo.github.io" # the base hostname & protocol for your site
+emal: jackarailo@gmail.com
+github_username:  jackarailo
+
+# Posts in the future
+future: true
+# Create collections
+collections:
+    houses:
+        output: true
+
+# Exclude directories from the build
+exclude: 
+    - scripts
+    - wip
+
+# Build settings
+markdown: kramdown
+
+# Google Analytics
+google_analytics: UA-137710864-1
+google_tag_manager: GTM-5JKKMPN
+
+# Output settings
+permalink: none

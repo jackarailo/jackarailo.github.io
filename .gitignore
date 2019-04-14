@@ -1,0 +1,7 @@
+scripts/
+_site/
+wip/
+wip/
+*.sh
+*.log
+*.swp

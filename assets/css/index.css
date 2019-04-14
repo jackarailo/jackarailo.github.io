@@ -1,0 +1,85 @@
+* {
+  margin:50;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #F4F4F4;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+  position: relative;
+
+  height: 200px;
+  width: 90%;
+  margin: auto;
+  text-align:center;
+}
+
+.main h1 {
+  font-weight: 300;
+  color: #777;
+  font-size: 40px;
+}
+
+.main h2 {
+  font-weight: 300;
+  color: #9a9a9a;
+  font-size: 20px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons object {
+  padding: 0 8px;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+a.svg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+a.svg {
+  position: relative;
+  display: inline-block;
+}
+
+.main h2.item-msg {
+  color: #FF0000;
+  max-width: 500px;
+  margin:auto;
+  /*font-weight: 400;*/
+}
+
+.nav {
+  float: left;
+  width: 100%;
+}
+.nav li {
+  display: inline-block;
+  padding: 0 10px;
+}   
+
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+  > li {
+    float: none;
+    display: inline-block;
+  }
+}

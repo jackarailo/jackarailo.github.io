@@ -1,0 +1,34 @@
+---
+layout: default
+title: "Housing Evaluator"
+active_link: HousingEvaluator
+rss_feed: false
+---
+
+<div class="page-wrapper">
+  <div class="page-content">
+    <div class="wrapper">
+      <div class="home">
+        <h1 class="page-heading">London Housing Evaluation</h1>
+        <ul class="post-list">
+          {% assign mid = site.houses | sort: 'date' %}
+          {% assign sorted = mid | reverse %}
+          {% for post in sorted %}
+            <li>
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <h2>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%B %-d, %Y"}} - {{post.title }}</a>
+              </h2>
+              {%if post.excerpt %}
+              <h3 class="post-excerpt">{{ post.excerpt }}</h3>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+        {% if page.rss_feed %}
+        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

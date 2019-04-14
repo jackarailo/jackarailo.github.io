@@ -1,0 +1,25 @@
+<nav class="navbar navbar-light navbar-expand-md bg-light justify-content-md-center justify-content-start">
+  {% if page.active_link == "Home" %}
+  <a class="navbar-brand d-md-none d-inline" href="">Home</a>
+  {% elsif page.active_link == "Blog" %}
+  <a class="navbar-brand d-md-none d-inline" href="">Blog</a>
+  {% elsif page.active_link == "HousingEvaluator" %}
+  <a class="navbar-brand d-md-none d-inline" href="">Housing Evaluator</a>
+  {% endif %}
+  <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar">
+    <ul class="navbar-nav mx-auto text-md-center text-left">
+      <li {% if page.active_link == "Home" %}class="nav-item active"{% else %}class="nav-item"{% endif %}>
+        <a class="nav-link" href="/index.html">Home</a>
+      </li>
+      <li {% if page.active_link == "Blog" %}class="nav-item active"{% else %}class="nav-item"{% endif %}>
+        <a class="nav-link" href="/blog.html">Blog</a>
+      </li>
+      <li {% if page.active_link == "HousingEvaluator" %}class="nav-item active"{% else %}class="nav-item"{% endif %}>
+        <a class="nav-link" href="/housing-evaluator.html">Housing Evaluator</a>
+      </li>
+    </ul>
+  </div>
+</nav>
