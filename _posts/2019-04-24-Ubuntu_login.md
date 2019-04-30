@@ -16,11 +16,11 @@ This is a quick guide on how to change ubuntu's default color during boot and lo
 
 1. Go to `/usr/share/plymouth/themes`
 2. Backup `default.grub`: `sudo cp default.grub default.grub.bak`
-3. Open `default.grub`: `sudo vim default.grub`:
+3. Open `default.grub`: `sudo vim default.grub`
 4. Edit `44,0,30` to the RGB color of your choice. Refer to [Color codes here](https://htmlcolorcodes.com/). I've used `114,114,114` for a dark grey.
-5. Save and close the file.
+5. Save and close the file
 5. run `sudo update-grub`
-6. reboot and your new GRUB color should be there.
+6. reboot and your new GRUB color should be there
 
 {% highlight bash %}
 if background_color 44,0,30,0; then
@@ -34,9 +34,9 @@ fi
 2. Backup `ubuntu-logo.script`: `sudo cp ubuntu-logo.script ubuntu-logo.script.bak`
 3. Open `ubuntu-logo.script`: `sudo vim ubuntu-logo.script`
 4. Edit `Window.SetBackgroundTopColor (0.16, 0.00, 0.12);` and `Window.SetBackgroundBottomColor (0.16, 0.00, 0.12)` parameters to the color of your choice. To choose your favorite color simply divide the RGB codes by 300. For instance I've used `(0.38, 0.38, 0.38)` which is equivalent to RGB (114, 114, 114). Refer to [Color codes here](https://htmlcolorcodes.com/) for the RGB color codes. For example I've used `(0.38, 0.38, 0.38)` for a grey color without fading (same color as in the Bootloader theme above). If you want fading use different colors as inputs to the two functions.
-5. Save and close the file.
+5. Save and close the file
 6. run `sudo update-initramfs -u`
-7. reboot and your new ubuntu-logo screen color should be there.
+7. reboot and your new ubuntu-logo screen color should be there
 
 {% highlight bash %}
 #-----------------------------------------------------------------------------
@@ -63,8 +63,8 @@ Window.SetBackgroundBottomColor (0.16, 0.00, 0.12);  # an equally nice colour on
 {% endhighlight %}
 
 5. Edit `#2c001e` to the hex color code of your choice. Refer to [hex color codes here](https://htmlcolorcodes.com/). For the same grey color as above use `#727272`.
-6. Save and close the file.
-6. reboot and your new ubuntu login screen color should be there.
+6. Save and close the file
+7. reboot and your new ubuntu login screen color should be there
 
 
 ### Acknowledgements and References
