@@ -4,7 +4,7 @@ active_link: HousingEvaluator
 title:  "Selected properties in London for sale"
 excerpt: "Discover London's freshest and most interesting properties for sale as listed on rightmove."
 comments: true
-date:   2019-05-15 00:01:55
+date:   2019-05-14 20:01:55
 ---
 
 ## Highest ranked rightmove properties
