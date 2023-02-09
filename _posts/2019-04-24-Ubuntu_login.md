@@ -75,10 +75,3 @@ Thanks for reading this post. I'd be happy to exchange ideas, improve this artic
 2. [How to change the purple background color in grub?](https://askubuntu.com/questions/47488/how-to-change-the-purple-background-color-in-grub)
 3. [How do I change login screen purple color to another one or image (if possible) on Ubuntu 17.10?](https://askubuntu.com/questions/990960/how-do-i-change-login-screen-purple-color-to-another-one-or-image-if-possible)
 4. [Color codes](https://htmlcolorcodes.com/)
-
-
-<script>
-  var disqus_identifier = 'test';
-  var disqus_title = '{{ page.title }}'
-  var disqus_url = '{{ page.url | prepend: site.baseurl | prepend: site.url }}'
-</script>
